@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"postinstall": "prisma generate",
 		"start": "nodemon src/index.ts",
 		"build": "rimraf dist && tsc",
 		"ts.check": "tsc --project tsconfig.json",
