@@ -10,9 +10,9 @@ datasource db {
 model books {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
   company    String
-  created_at DateTime @db.Date
   isbn       Int
   pages      Int
   title      String
-  updated_at DateTime @db.Date
+  created_at DateTime? @default(now()) @db.Date
+  updated_at DateTime? @default(now()) @db.Date
 }
