@@ -7,7 +7,7 @@ exports.ListBookService = void 0;
 const db_1 = __importDefault(require("../prisma/db"));
 class ListBookService {
     static async execute() {
-        const books = await db_1.default.books.findMany();
+        const books = await db_1.default.livros.findMany();
         return books;
     }
 }

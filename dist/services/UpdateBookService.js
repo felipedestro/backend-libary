@@ -3,14 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateBookService = void 0;
+exports.UpdateBookService = void 0;
 const db_1 = __importDefault(require("../prisma/db"));
-class CreateBookService {
-    static async execute({ titulo, num_paginas, isbn, editora }) {
-        if (!titulo || !isbn || !editora) {
-            throw new Error("Preencha os campos obrigatórios!");
-        }
-        const book = await db_1.default.livros.create({
+class UpdateBookService {
+    static async execute(_id, { titulo, num_paginas, isbn, editora }) {
+        const book = await db_1.default.livros.update({
+            where: { id: _id },
             data: {
                 titulo,
                 num_paginas,
@@ -21,5 +19,5 @@ class CreateBookService {
         return book;
     }
 }
-exports.CreateBookService = CreateBookService;
-//# sourceMappingURL=CreateBookService.js.map
+exports.UpdateBookService = UpdateBookService;
+//# sourceMappingURL=UpdateBookService.js.map
