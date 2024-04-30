@@ -1,1 +1,0 @@
-{"version":3,"file":"ListBooksController.js","sourceRoot":"","sources":["../../src/controller/ListBooksController.ts"],"names":[],"mappings":";;;AAAA,mEAA+D;AAG/D,MAAa,mBAAmB;IAC/B,MAAM,CAAC,KAAK,CAAC,MAAM,CAAC,GAAY,EAAE,GAAa;QAC9C,MAAM,KAAK,GAAG,MAAM,kCAAe,CAAC,OAAO,EAAE,CAAC;QAC9C,GAAG,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;IACjB,CAAC;CACD;AALD,kDAKC"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"ListBooksService.js","sourceRoot":"","sources":["../../src/services/ListBooksService.ts"],"names":[],"mappings":";;;;;;AAAA,sDAAkC;AAElC,MAAa,eAAe;IAC3B,MAAM,CAAC,KAAK,CAAC,OAAO;QACnB,MAAM,KAAK,GAAG,MAAM,YAAM,CAAC,MAAM,CAAC,QAAQ,EAAE,CAAC;QAC7C,OAAO,KAAK,CAAC;IACd,CAAC;CACD;AALD,0CAKC"}
