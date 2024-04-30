@@ -8,7 +8,7 @@ class ListUniqueBookController {
         if (!id) {
             res.status(500).send("Internal Server Error!");
         }
-        const book = await ListUniqueBookService_1.ListUniqueBookService.execute(id);
+        const book = await ListUniqueBookService_1.ListUniqueBookService.execute(Number(id));
         if (!book) {
             res.status(404);
             res.send("Livro não encontrado!");

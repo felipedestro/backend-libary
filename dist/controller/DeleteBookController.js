@@ -5,7 +5,7 @@ const DeleteBookService_1 = require("../services/DeleteBookService");
 class DeleteBookController {
     static async handle(req, res) {
         const { id } = req.params;
-        const book = DeleteBookService_1.DeleteBookService.execute(id);
+        const book = DeleteBookService_1.DeleteBookService.execute(Number(id));
         if (!book) {
             res.status(404);
             res.send("Livro não encontrado");

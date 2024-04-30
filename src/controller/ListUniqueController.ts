@@ -9,7 +9,7 @@ export class ListUniqueBookController {
 			res.status(500).send("Internal Server Error!");
 		}
 
-		const book = await ListUniqueBookService.execute(id);
+		const book = await ListUniqueBookService.execute(Number(id));
 		if (!book) {
 			res.status(404);
 			res.send("Livro não encontrado!");

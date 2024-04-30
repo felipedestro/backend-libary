@@ -3,16 +3,14 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model livros {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  id         Int   @id @default(autoincrement()) @map("_id") @db.Int
   editora    String
   isbn        Int
   num_paginas  Int
   titulo      String
-  created_at DateTime? @default(now()) @db.Date
-  updated_at DateTime? @default(now()) @db.Date
 }

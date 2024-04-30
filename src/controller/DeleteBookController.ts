@@ -4,7 +4,7 @@ import { DeleteBookService } from "../services/DeleteBookService";
 export class DeleteBookController {
 	static async handle(req: Request, res: Response) {
 		const { id } = req.params;
-		const book = DeleteBookService.execute(id);
+		const book = DeleteBookService.execute(Number(id));
 
 		if (!book) {
 			res.status(404);

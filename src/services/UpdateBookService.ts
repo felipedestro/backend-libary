@@ -8,7 +8,7 @@ interface UpdateBookProps {
 }
 
 export class UpdateBookService {
-	static async execute(_id: string, { titulo, num_paginas, isbn, editora }: UpdateBookProps) {
+	static async execute(_id: number, { titulo, num_paginas, isbn, editora }: UpdateBookProps) {
 		const book = await prisma.livros.update({
 			where: { id: _id },
 			data: {
